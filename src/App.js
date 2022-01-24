@@ -11,6 +11,7 @@ function App() {
 				<Button variant="outline-primary">Add Expense</Button>
 			</Stack>
 			<div
+				className="budgetCard"
 				style={{
 					display: 'grid',
 					gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
@@ -18,7 +19,7 @@ function App() {
 					alignItems: 'flex-start',
 				}}
 			>
-				<BudgetCard name="Food" amount={200} max={500}></BudgetCard>
+				<BudgetCard name="Food" amount={1000} max={1000}></BudgetCard>
 			</div>
 		</Container>
 	);
