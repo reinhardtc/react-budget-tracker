@@ -4,6 +4,7 @@ import AddBudgetModal from './Components/AddBudgetModal';
 import BudgetCard from './Components/BudgetCard';
 import { useState } from 'react';
 import { useBudgets } from './Contexts/BudgetContext';
+import AddExpenseModal from './Components/AddExpenseModal';
 
 function App() {
 	const [showAddBudgetModal, setShowAddBudgetModal] = useState(false);
@@ -37,6 +38,7 @@ function App() {
 				</div>
 			</Container>
 			<AddBudgetModal show={showAddBudgetModal} handleClose={() => setShowAddBudgetModal(false)} />
+			<AddExpenseModal show={true}></AddExpenseModal>
 		</>
 	);
 }
